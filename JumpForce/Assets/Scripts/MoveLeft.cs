@@ -1,0 +1,19 @@
+using UnityEngine;
+
+public class MoveLeft : MonoBehaviour
+{
+    private float speed = 10f;
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        //moves the thing to the left
+        transform.Translate(Vector3.left * speed * Time.deltaTime);
+    }
+}
